@@ -1,14 +1,17 @@
-from app import db, students
+from app import db, User
 
 db.create_all()
 
 
-test_rec = students(
-        'Marco Hemken',
-        'Los Angeles',
-        '123 Foobar Ave',
-        '12345'
-        )
+test_rec = User(
+        "marry_34",
+        "Marry",
+        "Pigeon",
+        "22",
+        "Female",
+        "170cm",
+        "70kg",
+        "No")
 
 
 db.session.add(test_rec)
